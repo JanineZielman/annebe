@@ -5,13 +5,33 @@
   "status": true,
   "json": {
     "Main": {
-      "siteTitle": {
-        "type": "StructuredText",
+      "logo": {
+        "type": "Image",
         "config": {
-          "label": "Site Title",
-          "placeholder": "Title of the site",
-          "allowTargetBlank": false,
-          "single": "heading1"
+          "label": "Logo",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "titel": {
+        "type": "Text",
+        "config": {
+          "label": "Titel",
+          "placeholder": ""
+        }
+      },
+      "omschrijving": {
+        "type": "Text",
+        "config": {
+          "label": "Omschrijving",
+          "placeholder": ""
+        }
+      },
+      "keywords": {
+        "type": "Text",
+        "config": {
+          "label": "Keywords",
+          "placeholder": ""
         }
       }
     }

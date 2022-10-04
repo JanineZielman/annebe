@@ -12,6 +12,10 @@ $black: #333333;
 
 body{
 	font-family: Avenir-Next;
+	background-color: $light-yellow;
+	color: $black;
+	margin: 0;
+	padding: 0;
 }
 
 h1{
@@ -30,4 +34,15 @@ p{
 
 .small{
 	font-size: 18px;
+}
+
+.container{
+	width: 1100px;
+	display: block;
+	margin: auto;
+}
+
+.quote{
+	font-size: 48px;
+	text-align: center;
 }

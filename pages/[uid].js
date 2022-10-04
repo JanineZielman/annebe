@@ -12,7 +12,7 @@ const Page = ({ page, navigation, settings }) => {
       <Head>
         <title>
           {prismicH.asText(page.data.title)} |{" "}
-          {prismicH.asText(settings.data.siteTitle)}
+          {settings.data.titel}
         </title>
       </Head>
       <SliceZone slices={page.data.slices} components={components} />

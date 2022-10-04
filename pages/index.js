@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { SliceZone } from "@prismicio/react";
-import * as prismicH from "@prismicio/helpers";
 
 import { createClient } from "../prismicio";
 import { components } from "../slices/";
@@ -10,7 +9,7 @@ const Index = ({ page, navigation, settings }) => {
   return (
     <Layout navigation={navigation} settings={settings}>
       <Head>
-        <title>{prismicH.asText(page.data.title)}</title>
+        <title>{page.data.titel}</title>
       </Head>
       <SliceZone slices={page.data.slices} components={components} />
     </Layout>

@@ -11,13 +11,7 @@
   "lang": "en-us",
   "alternate_languages": [],
   "data": {
-    "title": [
-      {
-        "type": "heading1",
-        "text": "Money",
-        "spans": []
-      }
-    ],
+    "titel": "lead",
     "slices": []
   }
 }

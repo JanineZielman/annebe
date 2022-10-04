@@ -119,7 +119,7 @@ interface SettingsDocumentData {
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    siteTitle: prismicT.TitleField;
+    // siteTitle: prismicT.TitleField;
 }
 /**
  * Settings document from Prismic

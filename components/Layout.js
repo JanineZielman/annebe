@@ -2,9 +2,11 @@ import { Header } from "./Header";
 
 export const Layout = ({ navigation, settings, children }) => {
   return (
-    <div className="text-slate-800">
+    <div className="">
       <Header navigation={navigation} settings={settings} />
-      <main>{children}</main>
+      <div className="container">
+        <main>{children}</main>
+      </div>
     </div>
   );
 };

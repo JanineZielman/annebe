@@ -81,17 +81,74 @@
         },
         "items": {}
       }
-    }
-  },
-  "_cts": {
-    "page": {
-      "title": {
-        "config": {
-          "patternType": "HEADING",
-          "blocks": 1
+    },
+    "AfbeeldingTekst": {
+      "default": {
+        "primary": {
+          "tekst": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
         }
       }
     },
+    "TekstDubbeleAfbeelding": {
+      "default": {
+        "primary": {
+          "tekst": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "Kolommen": {
+      "default": {
+        "primary": {
+          "kolom1": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "kolom2": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "Tekst": {
+      "default": {
+        "primary": {
+          "tekst": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "Aanbod": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "Inspiratie": {
+      "default": {
+        "primary": {}
+      }
+    }
+  },
+  "_cts": {
+    "page": {},
     "navigation": {},
     "settings": {}
   }
