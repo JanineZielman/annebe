@@ -1,31 +1,30 @@
 import React from 'react'
-import { PrismicRichText } from '@prismicio/react'
+import { PrismicLink, PrismicRichText } from '@prismicio/react'
 
-const TekstDubbeleAfbeelding = ({ slice }) => (
-  <section>
-    <span className="title">
-      {
-        slice.primary.title ?
-        <PrismicRichText field={slice.primary.title}/>
-        : <h2>Template slice, update me!</h2>
-      }
-    </span>
-    {
-      slice.primary.description ?
-      <PrismicRichText field={slice.primary.description}/>
-      : <p>start by editing this slice from inside Slice Machine!</p>
-    }
-    <style jsx>{`
-        section {
-          max-width: 600px;
-          margin: 4em auto;
-          text-align: center;
-        }
-        .title {
-          color: #8592e0;
-        }
-    `}</style>
-  </section>
-)
+const TekstDubbeleAfbeelding = ({ slice }) => {
+  console.log(slice)
+  return(
+    <section className={`tekst-dubbele-afbeelding ${slice.primary.gele_achtergrond ? 'yellow-bg' : ''}`}>
+      <div className="container flex">
+        <div className='text'>
+          <h1>{slice.primary.titel}</h1>
+          <PrismicRichText field={slice.primary.tekst}/>
+          {slice.primary.link &&
+            <div className="read-more">
+              <PrismicLink field={slice.primary.link}>
+                <div className='bg'></div>
+                {slice.primary.link_label}
+              </PrismicLink>
+            </div>
+          }
+        </div>
+        <div className='double-image'>
+          <img className="image2" src={slice.primary.afbeelding2?.url}/>
+          <img className="image1" src={slice.primary.afbeelding1?.url}/>
+        </div>
+      </div>
+    </section>
+  )
+}
 
 export default TekstDubbeleAfbeelding

@@ -4,13 +4,15 @@ import { PrismicRichText, PrismicText } from "@prismicio/react";
 const Quote = ({ slice }) => {
   return (
     <section className="quote">
-      {prismicH.isFilled.richText(slice.primary.quote) && (
-          <blockquote>
-            <span>&ldquo;</span>
-            <PrismicText field={slice.primary.quote} />
-            <span>&rdquo;</span>
-          </blockquote>
-      )}
+      <div className="container">
+        {prismicH.isFilled.richText(slice.primary.quote) && (
+            <>
+              <span>&ldquo;</span>
+              <PrismicText field={slice.primary.quote} />
+              <span>&rdquo;</span>
+            </>
+        )}
+      </div>
     </section>
   );
 };
