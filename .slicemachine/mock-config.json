@@ -150,6 +150,13 @@
   "_cts": {
     "page": {},
     "navigation": {},
-    "settings": {}
+    "settings": {
+      "footer": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
   }
 }

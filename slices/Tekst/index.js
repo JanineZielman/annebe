@@ -1,30 +1,21 @@
 import React from 'react'
-import { PrismicRichText } from '@prismicio/react'
+import { PrismicRichText, PrismicLink } from '@prismicio/react'
 
 const Tekst = ({ slice }) => (
-  <section>
-    <span className="title">
-      {
-        slice.primary.title ?
-        <PrismicRichText field={slice.primary.title}/>
-        : <h2>Template slice, update me!</h2>
+  <section className='tekst-section' id={`${slice.primary.titel ? slice.primary.titel.split(' ')[0] : ''}`}>
+    <div className='container'>
+      <img className="default" src={slice.primary.afbeelding.url}/>
+      {slice.primary.titel && <h1>{slice.primary.titel}</h1>}
+      <PrismicRichText field={slice.primary.tekst}/>
+      {slice.primary.link?.url &&
+        <div className="read-more center">
+          <PrismicLink field={slice.primary.link}>
+            <div className='bg'></div>
+            {slice.primary.link_label}
+          </PrismicLink>
+        </div>
       }
-    </span>
-    {
-      slice.primary.description ?
-      <PrismicRichText field={slice.primary.description}/>
-      : <p>start by editing this slice from inside Slice Machine!</p>
-    }
-    <style jsx>{`
-        section {
-          max-width: 600px;
-          margin: 4em auto;
-          text-align: center;
-        }
-        .title {
-          color: #8592e0;
-        }
-    `}</style>
+    </div>
   </section>
 )
 

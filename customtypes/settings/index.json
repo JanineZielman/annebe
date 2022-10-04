@@ -33,6 +33,15 @@
           "label": "Keywords",
           "placeholder": ""
         }
+      },
+      "footer": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Footer",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,strong,em"
+        }
       }
     }
   }

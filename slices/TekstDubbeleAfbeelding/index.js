@@ -2,14 +2,13 @@ import React from 'react'
 import { PrismicLink, PrismicRichText } from '@prismicio/react'
 
 const TekstDubbeleAfbeelding = ({ slice }) => {
-  console.log(slice)
   return(
-    <section className={`tekst-dubbele-afbeelding ${slice.primary.gele_achtergrond ? 'yellow-bg' : ''}`}>
+    <section className={`tekst-dubbele-afbeelding ${slice.primary.gele_achtergrond ? 'yellow-bg' : ''}`} id={`${slice.primary.titel ? slice.primary.titel.split(' ')[0] : ''}`}>
       <div className="container flex">
         <div className='text'>
-          <h1>{slice.primary.titel}</h1>
+          {slice.primary.titel && <h1>{slice.primary.titel}</h1>}
           <PrismicRichText field={slice.primary.tekst}/>
-          {slice.primary.link &&
+          {slice.primary.link?.url &&
             <div className="read-more">
               <PrismicLink field={slice.primary.link}>
                 <div className='bg'></div>

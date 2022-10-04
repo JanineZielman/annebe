@@ -18,10 +18,17 @@
       },
       "alt": null,
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8"
+      "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613"
     },
-    "titel": "black",
-    "omschrijving": "because",
-    "keywords": "tropical"
+    "titel": "according",
+    "omschrijving": "page",
+    "keywords": "guide",
+    "footer": [
+      {
+        "type": "paragraph",
+        "text": "Id incididunt sit velit ad voluptate nisi duis dolore est sunt eu laborum in culpa.",
+        "spans": []
+      }
+    ]
   }
 }

@@ -64,6 +64,13 @@
                     "placeholder": "",
                     "select": null
                   }
+                },
+                "sectionid": {
+                  "type": "Text",
+                  "config": {
+                    "label": "SectionID",
+                    "placeholder": ""
+                  }
                 }
               },
               "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
@@ -83,19 +90,20 @@
                   },
                   "alt": null,
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f"
+                  "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db"
                 },
-                "titel": "art",
-                "onder_titel": "accident",
-                "link_label": "long",
+                "titel": "special",
+                "onder_titel": "lamp",
+                "link_label": "flag",
                 "link": {
                   "link_type": "Web",
-                  "url": "https://prismic.io"
-                }
+                  "url": "http://twitter.com"
+                },
+                "sectionid": "solution"
               }
             ],
             "primary": {
-              "titel": "no"
+              "titel": "changing"
             },
             "slice_type": "aanbod"
           }
@@ -151,7 +159,7 @@
                     "label": "Tekst",
                     "placeholder": "",
                     "allowTargetBlank": true,
-                    "multi": "paragraph,em,strong,o-list-item,list-item"
+                    "multi": "paragraph,strong,em,list-item,o-list-item,hyperlink"
                   }
                 },
                 "link_label": {
@@ -173,6 +181,24 @@
                   "type": "Boolean",
                   "config": {
                     "label": "Gele Achtergrond",
+                    "default_value": false,
+                    "placeholder_true": "true",
+                    "placeholder_false": "false"
+                  }
+                },
+                "offset": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "Offset",
+                    "default_value": false,
+                    "placeholder_true": "true",
+                    "placeholder_false": "false"
+                  }
+                },
+                "overflow": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "Overflow",
                     "default_value": false,
                     "placeholder_true": "true",
                     "placeholder_false": "false"
@@ -199,22 +225,24 @@
                 },
                 "alt": null,
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
+                "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1"
               },
-              "titel": "past",
+              "titel": "solar",
               "tekst": [
                 {
                   "type": "paragraph",
-                  "text": "Cupidatat occaecat fugiat sunt. Est officia duis velit eiusmod elit est magna proident sit reprehenderit consequat voluptate.",
+                  "text": "Qui eiusmod consectetur et ex id ex anim voluptate eu proident tempor dolore. Dolore aute culpa eu deserunt aliquip proident incididunt labore tempor tempor ea esse exercitation.",
                   "spans": []
                 }
               ],
-              "link_label": "sick",
+              "link_label": "earth",
               "link": {
                 "link_type": "Web",
-                "url": "http://twitter.com"
+                "url": "https://slicemachine.dev"
               },
-              "gele_achtergrond": false
+              "gele_achtergrond": true,
+              "offset": true,
+              "overflow": false
             },
             "slice_type": "afbeelding_tekst"
           }
@@ -373,7 +401,7 @@
                     "label": "Kolom1",
                     "placeholder": "",
                     "allowTargetBlank": true,
-                    "multi": "paragraph,strong,em,list-item,o-list-item"
+                    "multi": "paragraph,strong,em,list-item,o-list-item,hyperlink"
                   }
                 },
                 "kolom2": {
@@ -382,7 +410,7 @@
                     "label": "Kolom2",
                     "placeholder": "",
                     "allowTargetBlank": true,
-                    "multi": "paragraph,strong,em,list-item,o-list-item"
+                    "multi": "paragraph,strong,em,list-item,o-list-item,hyperlink"
                   }
                 },
                 "link_label": {
@@ -421,24 +449,24 @@
                 },
                 "alt": null,
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e"
+                "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613"
               },
-              "titel": "gray",
+              "titel": "there",
               "kolom1": [
                 {
                   "type": "paragraph",
-                  "text": "Id est velit tempor voluptate reprehenderit anim fugiat ullamco incididunt esse nostrud aliquip Lorem laboris. Ipsum irure ad ad adipisicing incididunt aute. Cupidatat pariatur nisi laborum Lorem occaecat laboris reprehenderit veniam voluptate esse laboris.",
+                  "text": "Incididunt proident amet fugiat anim occaecat esse magna.",
                   "spans": []
                 }
               ],
               "kolom2": [
                 {
                   "type": "paragraph",
-                  "text": "In et elit minim et excepteur consectetur minim Lorem ea non proident.",
+                  "text": "Enim labore magna eu id. Deserunt labore laborum occaecat ipsum. Occaecat anim consequat occaecat cillum cupidatat pariatur tempor velit voluptate esse officia sit.",
                   "spans": []
                 }
               ],
-              "link_label": "spell",
+              "link_label": "real",
               "link": {
                 "link_type": "Web",
                 "url": "http://twitter.com"
@@ -562,7 +590,7 @@
                     "label": "Tekst",
                     "placeholder": "",
                     "allowTargetBlank": true,
-                    "multi": "paragraph,strong,em,list-item,o-list-item"
+                    "multi": "paragraph,strong,em,list-item,o-list-item,hyperlink"
                   }
                 },
                 "link_label": {
@@ -601,20 +629,20 @@
                 },
                 "alt": null,
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04"
+                "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869"
               },
-              "titel": "occur",
+              "titel": "comfortable",
               "tekst": [
                 {
                   "type": "paragraph",
-                  "text": "Sint nisi anim tempor proident esse reprehenderit aute elit commodo in excepteur qui. Sunt velit laborum velit culpa minim reprehenderit aliqua dolore reprehenderit sint labore laborum.",
+                  "text": "Consequat ex nulla dolor magna Lorem dolor id. Sunt voluptate veniam deserunt irure pariatur ipsum occaecat ex velit nisi deserunt aliquip amet. Laboris do qui adipisicing quis.",
                   "spans": []
                 }
               ],
-              "link_label": "dream",
+              "link_label": "disappear",
               "link": {
                 "link_type": "Web",
-                "url": "https://slicemachine.dev"
+                "url": "http://google.com"
               }
             },
             "slice_type": "tekst"
@@ -663,7 +691,7 @@
                     "label": "Tekst",
                     "placeholder": "",
                     "allowTargetBlank": true,
-                    "multi": "paragraph,strong,em,list-item,o-list-item"
+                    "multi": "paragraph,strong,em,list-item,o-list-item,hyperlink"
                   }
                 },
                 "link_label": {
@@ -720,20 +748,20 @@
               {}
             ],
             "primary": {
-              "titel": "health",
+              "titel": "these",
               "tekst": [
                 {
                   "type": "paragraph",
-                  "text": "Ad sit dolor ea.",
+                  "text": "Eiusmod deserunt culpa aute sint voluptate sit Lorem laboris consequat incididunt excepteur duis irure. Ex adipisicing fugiat minim ut. Adipisicing exercitation ullamco enim id esse nostrud voluptate ullamco.",
                   "spans": []
                 }
               ],
-              "link_label": "driving",
+              "link_label": "pocket",
               "link": {
                 "link_type": "Web",
-                "url": "http://twitter.com"
+                "url": "http://google.com"
               },
-              "gele_achtergrond": true,
+              "gele_achtergrond": false,
               "afbeelding1": {
                 "dimensions": {
                   "width": 900,
@@ -741,7 +769,7 @@
                 },
                 "alt": null,
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+                "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8"
               },
               "afbeelding2": {
                 "dimensions": {
@@ -750,7 +778,7 @@
                 },
                 "alt": null,
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb"
+                "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2"
               }
             },
             "slice_type": "tekst_dubbele_afbeelding"

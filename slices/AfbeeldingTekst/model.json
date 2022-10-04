@@ -32,7 +32,7 @@
             "label": "Tekst",
             "placeholder": "",
             "allowTargetBlank": true,
-            "multi": "paragraph,em,strong,o-list-item,list-item"
+            "multi": "paragraph,strong,em,list-item,o-list-item,hyperlink"
           }
         },
         "link_label": {
@@ -54,6 +54,24 @@
           "type": "Boolean",
           "config": {
             "label": "Gele Achtergrond",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "offset": {
+          "type": "Boolean",
+          "config": {
+            "label": "Offset",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "overflow": {
+          "type": "Boolean",
+          "config": {
+            "label": "Overflow",
             "default_value": false,
             "placeholder_true": "true",
             "placeholder_false": "false"

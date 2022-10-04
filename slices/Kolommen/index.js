@@ -1,31 +1,33 @@
 import React from 'react'
-import { PrismicRichText } from '@prismicio/react'
+import { PrismicRichText, PrismicLink } from '@prismicio/react'
 
-const Kolommen = ({ slice }) => (
-  <section>
-    <span className="title">
-      {
-        slice.primary.title ?
-        <PrismicRichText field={slice.primary.title}/>
-        : <h2>Template slice, update me!</h2>
-      }
-    </span>
-    {
-      slice.primary.description ?
-      <PrismicRichText field={slice.primary.description}/>
-      : <p>start by editing this slice from inside Slice Machine!</p>
-    }
-    <style jsx>{`
-        section {
-          max-width: 600px;
-          margin: 4em auto;
-          text-align: center;
-        }
-        .title {
-          color: #8592e0;
-        }
-    `}</style>
-  </section>
-)
+const Kolommen = ({ slice }) => {
+  return(
+    <section className='kolommen' id={`${slice.primary.titel ? slice.primary.titel.split(' ')[0] : ''}`}>
+      <div className='container'>
+        <img className="default" src={slice.primary.afbeelding.url}/>
+        {slice.primary.titel && <h1>{slice.primary.titel}</h1>}
+        <div className='flex'>
+          <div className='column'>
+            <PrismicRichText field={slice.primary.kolom1}/>
+          </div>
+          <div className='column'>
+            <PrismicRichText field={slice.primary.kolom2}/>
+          </div>
+        </div>
+        <div className='align-right'>
+         {slice.primary.link?.url &&
+            <div className="read-more right">
+              <PrismicLink field={slice.primary.link}>
+                <div className='bg'></div>
+                {slice.primary.link_label}
+              </PrismicLink>
+            </div>
+          }
+        </div>
+      </div>
+    </section>
+  )
+}
 
 export default Kolommen

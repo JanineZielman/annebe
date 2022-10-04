@@ -5,5 +5,5 @@ export default {
 }
 
 
-export const _Default = () => <MyComponent slice={{"variation":"default","version":"sktwi1xtmkfgx8626","items":[{"afbeelding":{"dimensions":{"width":900,"height":500},"alt":null,"copyright":null,"url":"https://images.unsplash.com/photo-1544731612-de7f96afe55f"},"titel":"art","onder_titel":"accident","link_label":"long","link":{"link_type":"Web","url":"https://prismic.io"}}],"primary":{"titel":"no"},"slice_type":"aanbod","id":"_Default"}} />
+export const _Default = () => <MyComponent slice={{"variation":"default","version":"sktwi1xtmkfgx8626","items":[{"afbeelding":{"dimensions":{"width":900,"height":500},"alt":null,"copyright":null,"url":"https://images.unsplash.com/photo-1537498425277-c283d32ef9db"},"titel":"special","onder_titel":"lamp","link_label":"flag","link":{"link_type":"Web","url":"http://twitter.com"},"sectionid":"solution"}],"primary":{"titel":"changing"},"slice_type":"aanbod","id":"_Default"}} />
 _Default.storyName = ''

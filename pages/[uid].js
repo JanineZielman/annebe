@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { SliceZone } from "@prismicio/react";
-import * as prismicH from "@prismicio/helpers";
 
 import { createClient } from "../prismicio";
 import { components } from "../slices";
@@ -11,9 +10,14 @@ const Page = ({ page, navigation, settings }) => {
     <Layout navigation={navigation} settings={settings}>
       <Head>
         <title>
-          {prismicH.asText(page.data.title)} |{" "}
+          {page.data.titel} |{" "}
           {settings.data.titel}
         </title>
+        <meta name="description" content={settings.data.description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={`${page.data.titel} | ${settings.data.titel}`} />
+        <meta property="og:description" content={settings.data.description} />
+        <meta property="og:image" content={settings.data.logo.url} />
       </Head>
       <SliceZone slices={page.data.slices} components={components} />
     </Layout>

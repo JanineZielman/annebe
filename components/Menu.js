@@ -49,9 +49,9 @@ export const Menu = ({ navigation}) => {
 				<div className="close" onClick={closeModal}>X</div>
 				<div className="nav-links">
 					 {navigation.data?.links.map((item) => (
-            <PrismicLink field={item.link}  key={prismicH.asText(item.label)}>
+            <a href={`/${item.link.uid}`}  key={prismicH.asText(item.label)}>
               <PrismicText field={item.label} />
-            </PrismicLink>
+            </a>
           ))}
 				</div>
 				

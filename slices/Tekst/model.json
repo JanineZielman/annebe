@@ -32,7 +32,7 @@
             "label": "Tekst",
             "placeholder": "",
             "allowTargetBlank": true,
-            "multi": "paragraph,strong,em,list-item,o-list-item"
+            "multi": "paragraph,strong,em,list-item,o-list-item,hyperlink"
           }
         },
         "link_label": {

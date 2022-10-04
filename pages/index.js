@@ -9,7 +9,12 @@ const Index = ({ page, navigation, settings }) => {
   return (
     <Layout navigation={navigation} settings={settings}>
       <Head>
-        <title>{page.data.titel}</title>
+        <title>{settings.data.titel} | {page.data.titel}</title>
+        <meta name="description" content={settings.data.description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={`${page.data.titel} | ${settings.data.titel}`} />
+        <meta property="og:description" content={settings.data.description} />
+        <meta property="og:image" content={settings.data.logo.url} />
       </Head>
       <SliceZone slices={page.data.slices} components={components} />
     </Layout>

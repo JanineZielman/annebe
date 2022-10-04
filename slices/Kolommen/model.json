@@ -32,7 +32,7 @@
             "label": "Kolom1",
             "placeholder": "",
             "allowTargetBlank": true,
-            "multi": "paragraph,strong,em,list-item,o-list-item"
+            "multi": "paragraph,strong,em,list-item,o-list-item,hyperlink"
           }
         },
         "kolom2": {
@@ -41,7 +41,7 @@
             "label": "Kolom2",
             "placeholder": "",
             "allowTargetBlank": true,
-            "multi": "paragraph,strong,em,list-item,o-list-item"
+            "multi": "paragraph,strong,em,list-item,o-list-item,hyperlink"
           }
         },
         "link_label": {

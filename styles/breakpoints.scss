@@ -10,10 +10,19 @@
 		width: 92vw;
 		padding: 0 4vw;
 	}
+	header{
+		padding-bottom: 2vw;
+	}
+	.logo{
+		padding-top: 1vw;
+	}
 	h1{
 		font-size: 36px;
 	}
-	p{
+	p,
+	span,
+	a,
+	li {
 		font-size: 16px;
 	}
 	.container{
@@ -45,6 +54,17 @@
 	}
 	.double-image{
 		width: 100%;
-		margin-bottom: 48px;
+		.image1{
+			top: 10%;
+		}
+	}
+	.column {
+		width: 100%;
+	}
+	.insp-item {
+		width: 100%;
+	}
+	.flex .image.offset{
+		margin: -20% auto 0 auto;
 	}
 }
