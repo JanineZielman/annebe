@@ -2,11 +2,9 @@ import * as prismicH from "@prismicio/helpers";
 import { PrismicRichText, PrismicText } from "@prismicio/react";
 import clsx from "clsx";
 
-import { Bounded } from "../../components/Bounded";
-
 const Quote = ({ slice }) => {
   return (
-    <Bounded as="section" className="bg-white">
+    <section>
       {prismicH.isFilled.richText(slice.primary.quote) && (
         <figure className="grid gap-6">
           <blockquote>
@@ -31,7 +29,7 @@ const Quote = ({ slice }) => {
           )}
         </figure>
       )}
-    </Bounded>
+    </section>
   );
 };
 

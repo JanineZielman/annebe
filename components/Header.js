@@ -1,11 +1,9 @@
 import { PrismicLink, PrismicText } from "@prismicio/react";
 import * as prismicH from "@prismicio/helpers";
 
-import { Bounded } from "./Bounded";
-
 export const Header = ({ navigation, settings }) => {
   return (
-    <Bounded as="header" yPadding="sm">
+    <header>
       <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-3 leading-none">
         <PrismicLink href="/" className="text-xl font-semibold tracking-tight">
           <PrismicText field={settings.data.siteTitle} />
@@ -25,6 +23,6 @@ export const Header = ({ navigation, settings }) => {
           </ul>
         </nav>
       </div>
-    </Bounded>
+    </header>
   );
 };

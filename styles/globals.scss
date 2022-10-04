@@ -1,0 +1,33 @@
+$light-yellow: #FEF6DD;
+$yellow: #FFE48D;
+$light-orange: #F4C040;
+$orange: #EDA72B;
+$black: #333333;
+
+@font-face {
+	font-family: Avenir-Next;
+	src: url("fonts/AvenirNextLTPro-Regular.otf") format("opentype");
+	font-weight: 300;
+}
+
+body{
+	font-family: Avenir-Next;
+}
+
+h1{
+	font-size: 48px;
+	font-weight: 300;
+}
+
+h2{
+	font-size: 30px;
+}
+
+p{
+	font-size: 20px;
+	line-height: 1.4;
+}
+
+.small{
+	font-size: 18px;
+}

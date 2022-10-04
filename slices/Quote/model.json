@@ -19,13 +19,6 @@
             "allowTargetBlank": true,
             "single": "strong,em,heading3"
           }
-        },
-        "source": {
-          "type": "Text",
-          "config": {
-            "label": "Source",
-            "placeholder": ""
-          }
         }
       },
       "items": {},

@@ -3,9 +3,8 @@ import { PrismicLink, PrismicProvider } from '@prismicio/react'
 import { PrismicPreview } from '@prismicio/next'
 
 import { repositoryName, linkResolver } from '../prismicio'
-import { Heading } from '../components/Heading'
 
-import '../styles/globals.css'
+import '../styles/globals.scss'
 
 const NextLinkShim = ({ href, children, locale, ...props }) => {
   return (
@@ -17,19 +16,19 @@ const NextLinkShim = ({ href, children, locale, ...props }) => {
 
 const richTextComponents = {
   heading1: ({ children }) => (
-    <Heading as="h1" className="mb-7 mt-12 first:mt-0 last:mb-0">
+    <h1>
       {children}
-    </Heading>
+    </h1>
   ),
   heading2: ({ children }) => (
-    <Heading as="h2" size="md" className="mb-7 mt-12 first:mt-0 last:mb-0">
+    <h2>
       {children}
-    </Heading>
+    </h2>
   ),
   heading3: ({ children }) => (
-    <Heading as="h3" size="sm" className="mb-7 mt-12 first:mt-0 last:mb-0">
+    <h3>
       {children}
-    </Heading>
+    </h3>
   ),
   paragraph: ({ children }) => <p className="mb-7 last:mb-0">{children}</p>,
   oList: ({ children }) => (
@@ -70,32 +69,6 @@ export default function App({ Component, pageProps }) {
       richTextComponents={richTextComponents}
     >
       <PrismicPreview repositoryName={repositoryName}>
-        {/* TODO: Remove the following element once you have read the documentation. */}
-        {process.env.NODE_ENV === 'development' && (
-          <div
-            style={{
-              background: '#5163ba',
-              padding: '1rem',
-              textAlign: 'center',
-              fontSize: '0.85rem',
-              color: '#fff',
-            }}
-          >
-            <p>
-              <strong>👋 Welcome to your new website!</strong> To customize the
-              code and content of this site,{' '}
-              <a
-                href="https://github.com/prismicio-community/nextjs-starter-prismic-multi-page/tree/master/docs"
-                target="_blank"
-                rel="noreferrer"
-                style={{ textDecoration: 'underline' }}
-              >
-                see the documentation
-              </a>
-              . Remove this bar in <code>pages/_app.js</code>.
-            </p>
-          </div>
-        )}
         <Component {...pageProps} />
       </PrismicPreview>
     </PrismicProvider>
