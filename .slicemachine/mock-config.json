@@ -138,7 +138,8 @@
     },
     "Aanbod": {
       "default": {
-        "primary": {}
+        "primary": {},
+        "items": {}
       }
     },
     "Inspiratie": {

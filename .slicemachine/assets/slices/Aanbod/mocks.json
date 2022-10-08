@@ -11,20 +11,19 @@
           },
           "alt": null,
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db"
+          "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68"
         },
-        "titel": "special",
-        "onder_titel": "lamp",
-        "link_label": "flag",
+        "titel": "thought",
+        "onder_titel": "reason",
+        "link_label": "pay",
         "link": {
           "link_type": "Web",
-          "url": "http://twitter.com"
-        },
-        "sectionid": "solution"
+          "url": "https://prismic.io"
+        }
       }
     ],
     "primary": {
-      "titel": "changing"
+      "titel": "fort"
     },
     "slice_type": "aanbod"
   }
